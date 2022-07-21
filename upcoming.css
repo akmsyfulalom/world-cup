@@ -1,0 +1,448 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  -----------
+ top header and banner section style
+                        -----------  */
+
+.top-container {
+    margin: 50px 100px 100px 100px;
+    background-image: url(assets/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    background-size: 600px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.top-header {
+    width: 50%;
+    padding: 100px 0px 0px 100px;
+}
+
+.top-header h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700px;
+}
+
+.top-header p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    width: 450px;
+}
+
+.top-header button {
+    color: white;
+    background-color: red;
+    padding: 15px 10px;
+    font-size: 24px;
+    font-weight: 500px;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+
+.top-header button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.56);
+    padding-right: 15px;
+
+}
+
+/* main contant styles */
+
+.main-contant {
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 100px;
+
+}
+
+/*------------------
+ link-page-button style start 
+                    ---------------*/
+
+.link-page-button {
+    background-color: black;
+    padding: 30px;
+    width: 252px;
+    margin-bottom: 250px;
+    text-align: center;
+    border-radius: 7px;
+
+}
+
+.upcoming-match {
+
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 20px;
+
+}
+
+.upcoming-match a {
+    text-decoration: none;
+}
+
+.upcoming-match:hover {
+
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+
+
+.all-group {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.all-group:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.blog {
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 20px;
+
+}
+
+.blog:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+/* link page styles end */
+
+/*----------------
+ players card styles start  
+                    ---------*/
+.grid-player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    margin-left: 20px;
+
+}
+
+.garman-vs-france {
+    width: 300px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.653);
+    border-radius: 10px;
+
+
+
+}
+
+.two-img {
+    display: flex;
+    padding: 40px 0 0 25px;
+}
+
+#vs {
+    padding: 10px 20px 0 20px;
+    font-weight: bold;
+}
+
+.card-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card-info h4 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* footer styles start  */
+
+.tablet-button {
+    display: none;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer h1 {
+    text-align: center;
+    color: white;
+    padding: 100px 0 100px 0;
+}
+
+.footer-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+    color: gray;
+}
+
+.footer-menu ul li {
+    margin-right: 30px;
+
+}
+
+.footer-menu ul li:hover {
+    cursor: pointer;
+}
+
+.social-icon {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.social-icon i {
+    margin-right: 20px;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
+
+/* footer styles end  */
+
+/* mobile device responsive styles start  */
+
+@media only screen and (max-width:767px) {
+    .top-container {
+        background-size: 100%;
+        background-size: 300px;
+        background-position: bottom;
+        margin: 20px 50px 50px 50px;
+        height: 150vh;
+
+    }
+
+    .top-header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .top-header h1 {
+        padding-top: 0;
+        color: white;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+    .top-header p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-header button {
+        width: 50%;
+        margin-left: 25%;
+        padding: 10px 20px;
+        font-size: 16px;
+
+
+    }
+
+    /* banner responsive styles end */
+
+    /* three page link button mobile responsive styles start  */
+
+    .main-contant {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 0px;
+    }
+
+    .link-page-button {
+        background-color: white;
+        margin-bottom: 50px;
+        margin-left: 25%;
+
+    }
+
+    .upcoming-match {
+        border: 1px solid gray;
+        border-radius: 10px;
+
+    }
+
+    .all-group {
+        border: 1px solid gray;
+        border-radius: 10px;
+
+    }
+
+    .blog {
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+    .grid-player {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+
+    .garman-vs-france {
+        width: 100%;
+
+    }
+
+    .player-img img {
+        width: 100%;
+    }
+
+    /* footer responsive styles start  */
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* mobile responsive end  */
+
+/* tablet responsive css start  */
+
+@media only screen and (max-width:1024px) and (min-width:768px) {
+    .top-container {
+        background-size: 100%;
+        background-size: 400px;
+        background-position: right;
+        margin: 50px 100px 100px 100px;
+        height: 100vh;
+
+    }
+
+    .top-header {
+        padding: 100px 0 0 50px;
+    }
+
+    .top-header h1 {
+        padding-top: 20 0 0 0px;
+        color: white;
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .top-header p {
+        width: 100%;
+
+    }
+
+    /* banner responsive styles end */
+
+    /* three page link button mobile responsive styles start  */
+
+    .main-contant {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+
+    .link-page-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+        margin-left: 37%;
+        margin-bottom: 50px;
+
+    }
+
+    .upcoming-match {
+
+        padding: 15px 50px;
+        margin-right: 50px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .all-group {
+        padding: 15px 70px;
+        margin-right: 50px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .blog {
+        padding: 30px 100px;
+
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+    .grid-player {
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 20px;
+        margin-right: 20px;
+
+
+
+    }
+
+    .garman-vs-france {
+        width: 100%;
+    }
+
+    .player-img img {
+        width: 100%;
+    }
+
+    .tablet-button {
+        display: flex;
+        background-color: red;
+        border: none;
+        padding: 15px 35px;
+        font-size: 24px;
+        font-weight: 500px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        margin-left: 45%;
+    }
+}
